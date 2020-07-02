@@ -8,7 +8,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0; }
 
 ul,
@@ -33,13 +34,41 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  background: #FF817E;
+  padding: 20px 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: all .2s ease-in-out;
+  font-size: 16px; }
+  .btn:hover {
+    background: #fd5f5c;
+    color: #000; }
+  .btn:active {
+    border: 0px;
+    outline: none; }
+
+a {
+  text-decoration: none;
+  color: #888;
+  transition: all .2s ease-in-out; }
+  a:hover {
+    color: #FF817E; }
+
 .header__inner {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: flex-end; }
 
 .nav__list li {
-  padding: 0 20px; }
+  padding: 0 20px;
+  cursor: pointer; }
+  .nav__list li:hover {
+    background: #FF817E; }
   .nav__list li:first-child {
     padding-left: 0; }
   .nav__list li:last-child {
@@ -54,13 +83,64 @@ body {
   .nav__list a:hover {
     color: #FF817E; }
 
-.intro__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  z-index: -1; }
+.intro {
+  padding-top: 80px;
+  background: url(../img/leaf.png) no-repeat left center/12%; }
+  .intro__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: -1; }
+  .intro__img img {
+    display: block;
+    width: 100%; }
+  .intro__inner {
+    width: 50%; }
+  .intro__subtitle {
+    color: #FF817E;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Rufina", serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 20px; }
+  .intro__title {
+    font-size: 49px;
+    font-family: "Rufina", serif;
+    margin-bottom: 25px;
+    line-height: 60px; }
+  .intro__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #555;
+    margin-bottom: 50px; }
+  .intro__link {
+    color: #555;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding-left: 60px; }
+    .intro__link:hover svg {
+      background: #FF817E;
+      fill: #fff;
+      border-radius: 50%; }
+  .intro__icon {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 15px;
+    fill: #FF817E; }
 
-.intro__img img {
-  display: block;
-  width: 100%; }
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px; }
+  .nav__list li:hover {
+    background: #000; }
+  .intro__img img {
+    display: none; }
+  .intro__inner {
+    width: 100%; } }

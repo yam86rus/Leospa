@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .container{
+      max-width: 540px;
+  }
+  .nav__list li:hover{
+      background: #000;
+  }
+  .intro__img img{
+      display: none;
+  }
+  .intro__inner{
+      width: 100%;
+  }
+  
+}

@@ -11,7 +11,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 ul,
@@ -36,12 +37,44 @@ body {
 }
 // === / reset ===
 
+// === global ===
 .container {
   width: 100%x;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.btn{
+  text-transform: uppercase;
+  color: #fff;
+  background: $pink;
+  padding: 20px 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: all .2s ease-in-out;
+  font-size: 16px;
+  &:hover{
+    background: $dark-pink;
+    color: #000;
+  }
+  &:active{
+    border: 0px;
+    outline: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $link-color;
+  transition: all .2s ease-in-out;
+  &:hover{
+    color: $pink;
+  }
+}
+// === / global ===
 
 // === Header ===
 .header {
@@ -56,6 +89,10 @@ body {
 .nav {
   &__list li {
     padding: 0 20px;
+    cursor: pointer;
+    &:hover{
+      background: $pink;
+    }
     &:first-child {
       padding-left: 0;
     }
@@ -75,21 +112,71 @@ body {
   }
 }
 
-
 // === / header ===
 
-// === intro ===
 
-.intro{
-  &__img{
+
+// === intro ===
+.intro {
+  padding-top: 80px;
+  background: url(../img/leaf.png) no-repeat left center /12%;
+  
+  &__img {
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
     z-index: -1;
   }
-  &__img img{
+  &__img img {
     display: block;
     width: 100%;
+  }
+  &__inner {
+    width: 50%;
+  }
+  &__subtitle {
+    color: $pink;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Rufina", serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 49px;
+    font-family: "Rufina", serif;
+    margin-bottom: 25px;
+    line-height: 60px;
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    color: $text;
+    margin-bottom: 50px;
+  }
+  &__link{
+    color: $text;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding-left: 60px; 
+    &:hover svg {
+      background: $pink;
+      fill: #fff;
+      border-radius: 50%;
+    }
+  }
+  &__icon{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 15px;
+    fill: $pink;
+    
   }
 }
