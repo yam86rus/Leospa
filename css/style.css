@@ -51,6 +51,9 @@ body {
   .btn:active {
     border: 0px;
     outline: none; }
+  .btn--round {
+    border-radius: 30px;
+    width: 170px; }
 
 a {
   text-decoration: none;
@@ -96,7 +99,8 @@ a {
     display: block;
     width: 100%; }
   .intro__inner {
-    width: 50%; }
+    width: 50%;
+    padding-left: 100px; }
   .intro__subtitle {
     color: #FF817E;
     text-transform: uppercase;
@@ -134,6 +138,43 @@ a {
     position: relative;
     top: 15px;
     fill: #FF817E; }
+
+.about {
+  text-align: center; }
+  .about__row {
+    margin-top: 200px;
+    position: relative;
+    padding: 0 100px; }
+  .about__flower-left {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .about__flower-right {
+    position: absolute;
+    top: 50%;
+    right: 0; }
+  .about__image {
+    margin: 0 0 40px; }
+  .about__subtitle {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #888;
+    line-height: .8;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 27px 0; }
+  .about__title {
+    color: #343a40;
+    font-size: 42px;
+    margin: 0 0 32px 0;
+    font-family: "Rufina", serif; }
+  .about__text {
+    font-family: "Roboto", sans-serif;
+    color: #888;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 0 0 70px 0; }
 
 @media (max-width: 767px) {
   .container {
