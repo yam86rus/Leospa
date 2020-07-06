@@ -43,7 +43,7 @@ body {
   outline: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-size: 16px; }
   .btn:hover {
     background: #fd5f5c;
@@ -58,7 +58,7 @@ body {
 a {
   text-decoration: none;
   color: #888;
-  transition: all .2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   a:hover {
     color: #FF817E; }
 
@@ -159,7 +159,7 @@ a {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: #888;
-    line-height: .8;
+    line-height: 0.8;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0 0 27px 0; }
@@ -175,6 +175,44 @@ a {
     font-weight: 300;
     line-height: 27px;
     margin: 0 0 70px 0; }
+
+.service__row {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.service__link {
+  width: 25%;
+  position: relative; }
+
+.service__img {
+  max-width: 100%;
+  display: block;
+  border-right: 5px solid #fff; }
+
+.service__img-mask {
+  display: flex;
+  border-right: 5px solid #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FF817E;
+  width: 100%;
+  height: 100%;
+  background-color: .service__img-mask pink;
+  opacity: 0;
+  transition: all .2s ease-in-out; }
+  .service__img-mask:hover {
+    opacity: .8; }
+  .service__img-mask p {
+    color: #fff;
+    font-family: "Rufina", serif;
+    font-size: 15px;
+    margin-top: 20px; }
 
 @media (max-width: 767px) {
   .container {
