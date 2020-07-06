@@ -205,14 +205,32 @@ a {
   height: 100%;
   background-color: .service__img-mask pink;
   opacity: 0;
-  transition: all .2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .service__img-mask:hover {
-    opacity: .8; }
+    opacity: 0.8; }
   .service__img-mask p {
     color: #fff;
     font-family: "Rufina", serif;
     font-size: 15px;
     margin-top: 20px; }
+
+.procedures .container {
+  max-width: 730px; }
+
+.pocedures__row {
+  margin-top: 100px;
+  text-align: center; }
+  .pocedures__row h2 {
+    font-family: "Rufina", serif;
+    font-size: 42px;
+    line-height: 1.2; }
+  .pocedures__row p {
+    margin-top: 32px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #888;
+    line-height: 27px; }
 
 @media (max-width: 767px) {
   .container {

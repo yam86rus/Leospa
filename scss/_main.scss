@@ -248,7 +248,7 @@ a {
     display: block;
     border-right: 5px solid #fff;
   }
-  &__img-mask{
+  &__img-mask {
     display: flex;
     border-right: 5px solid #fff;
     flex-direction: column;
@@ -263,11 +263,11 @@ a {
     height: 100%;
     background-color: &pink;
     opacity: 0;
-    transition: all .2s ease-in-out;
-    &:hover{
-      opacity: .8;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.8;
     }
-    & p{
+    & p {
       color: #fff;
       font-family: "Rufina", serif;
       font-size: 15px;
@@ -278,4 +278,26 @@ a {
 
 // === service ===
 
+// === procedures ====
+.procedures .container {
+  max-width: 730px;
+}
+.pocedures__row {
+  margin-top: 100px;
+  text-align: center;
 
+  & h2 {
+    font-family: "Rufina", serif;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  & p {
+    margin-top: 32px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: $link-color;
+    line-height: 27px;
+  }
+}
+// === / procedures ====
