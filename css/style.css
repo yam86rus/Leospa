@@ -218,7 +218,7 @@ a {
   max-width: 730px; }
 
 .pocedures__row {
-  margin-top: 100px;
+  margin: 100px 0;
   text-align: center; }
   .pocedures__row h2 {
     font-family: "Rufina", serif;
@@ -231,6 +231,35 @@ a {
     font-weight: 300;
     color: #888;
     line-height: 27px; }
+
+.testimonials__row {
+  display: flex;
+  justify-content: space-between; }
+
+.testimonials__item {
+  text-align: center;
+  width: 33.33333%;
+  max-width: 350px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #eee; }
+
+.testimonials__img {
+  display: block;
+  width: 100%; }
+
+.testimonials__title {
+  margin-top: 35px;
+  font-family: "Rufina", serif;
+  font-size: 22px; }
+
+.testimonials__text {
+  margin: 35px 0 39px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #555; }
 
 @media (max-width: 767px) {
   .container {
