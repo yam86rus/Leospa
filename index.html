@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Leospa</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,7 +27,7 @@
 <body>
 
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
@@ -33,11 +35,11 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Feature</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#" data-scroll="#home">Home</a></li>
+                        <li><a href="#" data-scroll="#about">About</a></li>
+                        <li><a href="#" data-scroll="#procedures">procedures</a></li>
+                        <li><a href="#" data-scroll="#team">Team</a></li>
+                        <li><a href="#" data-scroll="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,7 +48,7 @@
     <!-- / header -->
 
     <!-- intro -->
-    <section class="intro">
+    <section class="intro" id="home">
         <div class="container">
             <div class="intro__img">
                 <img src="img/spa.png" alt="spa">
@@ -69,7 +71,7 @@
     <!-- / intro -->
 
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__row">
                 <div class="about__flower-left">
@@ -96,7 +98,7 @@
     <!-- / about -->
 
     <!-- service -->
-    <section class="service">
+    <section class="service" id="service">
         <div class="service__row">
             <a class="service__link" href="#">
                 <img class="service__img" src="img/1.jpg" alt="">
@@ -140,11 +142,12 @@
     <!-- / service -->
 
     <!-- procedures -->
-    <section class="procedures">
+    <section class="procedures" id="procedures">
         <div class="container">
             <div class="pocedures__row">
                 <h2>Popular Procedures</h2>
-                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+                <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every
+                    wherein were meat kind wherein and martcin</p>
             </div>
         </div>
     </section>
@@ -157,29 +160,49 @@
                 <div class="testimonials__item">
                     <img class="testimonials__img" src="img/testimonials_1.jpg" alt="testimonial">
                     <h2 class="testimonials__title">Massage Therapy</h2>
-                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one
+                        seasons face great dr Waters firmament place which.</p>
                     <button class="btn btn--round">Read more</button>
                 </div>
                 <div class="testimonials__item">
                     <img class="testimonials__img" src="img/testimonials_2.jpg" alt="testimonial">
                     <h2 class="testimonials__title">Beauty Care</h2>
-                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one
+                        seasons face great dr Waters firmament place which.</p>
                     <button class="btn btn--round">Read more</button>
                 </div>
                 <div class="testimonials__item">
                     <img class="testimonials__img" src="img/testimonials_3.jpg" alt="testimonial">
                     <h2 class="testimonials__title">Executive Reflexology</h2>
-                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <p class="testimonials__text">Living winged said you darkness you're divide gathered and bring one
+                        seasons face great dr Waters firmament place which.</p>
                     <button class="btn btn--round">Read more</button>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- / testimonial -->
 
+    <!-- / testimonials-slider -->
+    <section class="testimonials-slider">
+        <div class="container">
+            <div class="testimonials-slider__item">
+                <p class="testimonials-slider__text">First i beast be fruitful open you tree all Won't can't likeness
+                    and you're have whales creature seed to two grass life blessed you meat shall you winged under from
+                    their there he That you're one called gather make much red wherein set fourth green bearing fifth
+                    replenish given she had.</p>
+                <div class="testimonials-slider__img">
+                    <img src="img/client-1.png" alt="client">
+                </div>
+                <p class="testimonials-slider__name"> Jack Marsh,<span class="testimonials-slider__job"> Execute</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- team -->
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">team</div>
     </section>
     <!-- / team -->
@@ -195,7 +218,7 @@
     <!-- / blog -->
 
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">contact</div>
     </section>
     <!-- / contact -->
@@ -205,6 +228,8 @@
         <div class="container">footer</div>
     </footer>
     <!-- / footer -->
+
+    <script src="app.js"></script>
 </body>
 
 </html>
