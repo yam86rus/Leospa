@@ -94,7 +94,7 @@ a {
   &__list li {
     padding: 0 20px;
     cursor: pointer;
-   
+
     &:first-child {
       padding-left: 0;
     }
@@ -103,29 +103,27 @@ a {
     }
   }
 }
-.header.fixed{
-    position: fixed;
-    background: $pink;
-    width: 100%;
-    z-index: 100;
-    .header__inner{
-      display: flex;
-      justify-content: center;
+.header.fixed {
+  position: fixed;
+  background: $pink;
+  width: 100%;
+  z-index: 100;
+  .header__inner {
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo {
+    display: none;
+  }
+  li {
+    margin: 20px;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #000;
     }
-    .header__logo{
-      display: none;
-    }
-    li{
-      margin: 20px;
-    }
-    a{
-      color: #fff;
-      &:hover{
-        color: #000;
-      }
-    }
-    
-  
+  }
 }
 .nav__list a {
   text-transform: uppercase;
@@ -361,6 +359,7 @@ a {
 
 // === testimonials-slider ===
 .testimonials-slider {
+  background-color: $background-color;
   font-family: "Rufina", serif;
   font-size: 18px;
   line-height: 35px;
@@ -387,3 +386,101 @@ a {
     font-weight: 300;
   }
 }
+
+// === team ===
+.team {
+  &__title {
+    max-width: 730px;
+    margin: 100px auto 0 auto;
+    font-family: "Rufina", serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    max-width: 730px;
+    margin: 32px auto 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: $link-color;
+    font-weight: 300;
+    line-height: 27px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  &__card {
+    position: relative;
+    width: 33.33333%;
+    max-width: 390px;
+  }
+  &__img {
+    max-width: 100%;
+    padding: 15px;
+  }
+  &__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    // border: 1px solid $black;
+    transform: translateX(12%);
+    h2{
+      margin-top: 30px;
+    }
+   &:hover p{
+     transition: all .5s ease-in-out;
+    margin-bottom: 20px;
+   }
+   &:hover .social{
+     transition: all 1s ease-in-out;
+     opacity: 1;
+   }
+  }
+}
+
+// === SVG === сообщите мне если можно проще, плиз.
+
+
+.icon-colors {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+  // === facebook ===
+  --color-0: #fff; // fill circle
+  --color-1: #000; // fill 'F'
+  --color-2: #000; // stroke circle
+  --color-3: 3; // stroke circle
+ 
+  
+  &:hover {
+    --color-0: #ff817e;
+    --color-2: #ff817e; // stroke circle
+    --color-1: #fff; // fill 'F'
+  }
+}
+
+.twitter{
+  border: 1px solid #000;
+  border-radius: 50px;
+  transition: all .2s ease-in-out;
+  &:hover{
+    fill: #fff;
+    background: $pink;
+    border: 1px solid $pink;
+  }
+}
+
+.social{
+  opacity: 0;
+}
+// === / svg ===
+

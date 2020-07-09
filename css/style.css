@@ -276,6 +276,7 @@ a {
   color: #555; }
 
 .testimonials-slider {
+  background-color: #fff9f8;
   font-family: "Rufina", serif;
   font-size: 18px;
   line-height: 35px;
@@ -297,6 +298,83 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300; }
+
+.team__title {
+  max-width: 730px;
+  margin: 100px auto 0 auto;
+  font-family: "Rufina", serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center; }
+
+.team__text {
+  text-align: center;
+  max-width: 730px;
+  margin: 32px auto 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #888;
+  font-weight: 300;
+  line-height: 27px; }
+
+.team__cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px; }
+
+.team__card {
+  position: relative;
+  width: 33.33333%;
+  max-width: 390px; }
+
+.team__img {
+  max-width: 100%;
+  padding: 15px; }
+
+.team__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transform: translateX(12%); }
+  .team__info h2 {
+    margin-top: 30px; }
+  .team__info:hover p {
+    transition: all .5s ease-in-out;
+    margin-bottom: 20px; }
+  .team__info:hover .social {
+    transition: all 1s ease-in-out;
+    opacity: 1; }
+
+.icon-colors {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+  --color-0: #fff;
+  --color-1: #000;
+  --color-2: #000;
+  --color-3: 3; }
+  .icon-colors:hover {
+    --color-0: #ff817e;
+    --color-2: #ff817e;
+    --color-1: #fff; }
+
+.twitter {
+  border: 1px solid #000;
+  border-radius: 50px;
+  transition: all .2s ease-in-out; }
+  .twitter:hover {
+    fill: #fff;
+    background: #FF817E;
+    border: 1px solid #FF817E; }
+
+.social {
+  opacity: 0; }
 
 @media (max-width: 767px) {
   .container {
