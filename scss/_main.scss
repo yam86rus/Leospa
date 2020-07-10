@@ -87,8 +87,7 @@ a {
     grid-template-columns: 1fr 3fr;
     align-items: flex-end;
   }
-  &__logo {
-  }
+
 }
 .nav {
   &__list li {
@@ -429,25 +428,24 @@ a {
     width: 80%;
     text-align: center;
     background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     // border: 1px solid $black;
     transform: translateX(12%);
-    h2{
+    h2 {
       margin-top: 30px;
     }
-   &:hover p{
-     transition: all .5s ease-in-out;
-    margin-bottom: 20px;
-   }
-   &:hover .social{
-     transition: all 1s ease-in-out;
-     opacity: 1;
-   }
+    &:hover p {
+      transition: all 0.5s ease-in-out;
+      margin-bottom: 20px;
+    }
+    &:hover .social {
+      transition: all 1s ease-in-out;
+      opacity: 1;
+    }
   }
 }
 
 // === SVG === сообщите мне если можно проще, плиз.
-
 
 .icon-colors {
   height: 30px;
@@ -459,8 +457,7 @@ a {
   --color-1: #000; // fill 'F'
   --color-2: #000; // stroke circle
   --color-3: 3; // stroke circle
- 
-  
+
   &:hover {
     --color-0: #ff817e;
     --color-2: #ff817e; // stroke circle
@@ -468,19 +465,105 @@ a {
   }
 }
 
-.twitter{
+.twitter {
   border: 1px solid #000;
   border-radius: 50px;
-  transition: all .2s ease-in-out;
-  &:hover{
+  transition: all 0.2s ease-in-out;
+  &:hover {
     fill: #fff;
     background: $pink;
     border: 1px solid $pink;
   }
 }
 
-.social{
+.social {
   opacity: 0;
 }
 // === / svg ===
+.container__form {
+  margin: 100px auto 0;
+  max-width: 650px;
+}
 
+// === appointment ===
+.appointment {
+  background: $background-color;
+}
+.form__input {
+  margin-bottom: 30px;
+  display: flex;
+
+  & > input,
+  select {
+    margin: 10px;
+    width: 50%;
+    display: block;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid $text;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+}
+select,
+option {
+  color: $text;
+}
+// === / appointment ===
+
+// === blog ===
+.blog {
+  & .container {
+    max-width: 640px;
+  }
+}
+// === / blog ===
+
+// === footer ===
+.footer {
+  background: $background-color;
+  &__logo {
+    margin: 20px 0;
+  }
+  & .container {
+    margin-top: 100px;
+    padding: 50px 0;
+    text-align: center;
+  }
+  &__text {
+    text-transform: uppercase;
+    color: $link-color;
+    & a{
+      color: $pink;
+      &:hover{
+        color: #fff;
+        background: $pink;
+      }
+    }
+  }
+}
+
+.footer__icons {
+  margin: 0 0 20px ;
+}
+
+.footer__icon {
+  height: 15px;
+  width: 15px;
+  transition: all .2s ease-in-out;
+  &:hover{
+    fill: $pink;
+  }
+}
+
+.footer__link {
+  padding: 0 10px;
+  color: $pink;
+  border-right: 2px solid #000;
+  &:hover {
+    color: $dark-pink;
+  }
+}
+// === / footer ===

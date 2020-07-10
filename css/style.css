@@ -344,7 +344,7 @@ a {
   .team__info h2 {
     margin-top: 30px; }
   .team__info:hover p {
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     margin-bottom: 20px; }
   .team__info:hover .social {
     transition: all 1s ease-in-out;
@@ -367,7 +367,7 @@ a {
 .twitter {
   border: 1px solid #000;
   border-radius: 50px;
-  transition: all .2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .twitter:hover {
     fill: #fff;
     background: #FF817E;
@@ -375,6 +375,70 @@ a {
 
 .social {
   opacity: 0; }
+
+.container__form {
+  margin: 100px auto 0;
+  max-width: 650px; }
+
+.appointment {
+  background: #fff9f8; }
+
+.form__input {
+  margin-bottom: 30px;
+  display: flex; }
+  .form__input > input,
+  .form__input select {
+    margin: 10px;
+    width: 50%;
+    display: block;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #555;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: transparent;
+    text-transform: uppercase; }
+
+select,
+option {
+  color: #555; }
+
+.blog .container {
+  max-width: 640px; }
+
+.footer {
+  background: #fff9f8; }
+  .footer__logo {
+    margin: 20px 0; }
+  .footer .container {
+    margin-top: 100px;
+    padding: 50px 0;
+    text-align: center; }
+  .footer__text {
+    text-transform: uppercase;
+    color: #888; }
+    .footer__text a {
+      color: #FF817E; }
+      .footer__text a:hover {
+        color: #fff;
+        background: #FF817E; }
+
+.footer__icons {
+  margin: 0 0 20px; }
+
+.footer__icon {
+  height: 15px;
+  width: 15px;
+  transition: all .2s ease-in-out; }
+  .footer__icon:hover {
+    fill: #FF817E; }
+
+.footer__link {
+  padding: 0 10px;
+  color: #FF817E;
+  border-right: 2px solid #000; }
+  .footer__link:hover {
+    color: #fd5f5c; }
 
 @media (max-width: 767px) {
   .container {
