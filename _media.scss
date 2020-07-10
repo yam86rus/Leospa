@@ -17,6 +17,7 @@
     .burger{
         display: block;
         padding: 20px 0;
+        justify-content: end;
        
     }
     .header.fixed .header__inner {
@@ -27,7 +28,7 @@
 // === / 991 px ===
 
 // === 767px ===
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container{
       max-width: 540px;
   }
@@ -40,5 +41,46 @@
   .intro__inner{
       width: 100%;
   }
+  .about__row{
+      padding: 0;
+  }
+  .service__link{
+      width: 50%;
+      margin-bottom: 5px;
+  }
+  .testimonials__row{
+      justify-content: center;
+  }
+  .testimonials__item{
+    width: 100%;
+  }
+  .team__card{
+      width: 100%;
+      margin-bottom: 20px;  
+  }
 }
 // === / 767px ===
+
+// === 414px ===
+@media (max-width: 414px) {
+    .about__flower-left img {
+        width: 100px;
+    }
+    .about__flower-right{
+        top: 75%;
+    }
+    .service__link{
+        width: 100%;
+        padding: 10px;
+    }
+    .intro__inner{
+        padding-left: 30px;
+    }
+    .about__row{
+        margin-top: 50px;
+    }
+    .footer .container{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

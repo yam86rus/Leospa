@@ -8,7 +8,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p {
   margin: 0; }
 
@@ -275,6 +274,7 @@ a {
 
 .testimonials__row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .testimonials__item {
@@ -347,6 +347,7 @@ a {
 
 .team__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 70px; }
 
@@ -480,12 +481,13 @@ option {
     display: block; }
   .burger {
     display: block;
-    padding: 20px 0; }
+    padding: 20px 0;
+    justify-content: end; }
   .header.fixed .header__inner {
     justify-content: flex-end;
     align-items: start; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     max-width: 540px; }
   .nav__list li:hover {
@@ -493,4 +495,32 @@ option {
   .intro__img img {
     display: none; }
   .intro__inner {
-    width: 100%; } }
+    width: 100%; }
+  .about__row {
+    padding: 0; }
+  .service__link {
+    width: 50%;
+    margin-bottom: 5px; }
+  .testimonials__row {
+    justify-content: center; }
+  .testimonials__item {
+    width: 100%; }
+  .team__card {
+    width: 100%;
+    margin-bottom: 20px; } }
+
+@media (max-width: 414px) {
+  .about__flower-left img {
+    width: 100px; }
+  .about__flower-right {
+    top: 75%; }
+  .service__link {
+    width: 100%;
+    padding: 10px; }
+  .intro__inner {
+    padding-left: 30px; }
+  .about__row {
+    margin-top: 50px; }
+  .footer .container {
+    margin-top: 0;
+    padding-top: 0; } }

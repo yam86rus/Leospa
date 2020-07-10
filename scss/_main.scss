@@ -11,7 +11,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p {
   margin: 0;
 }
@@ -115,7 +114,8 @@ a {
     background: $black;
     color: transparent;
     font-size: 0;
-    &:before, &:after {
+    &:before,
+    &:after {
       content: "";
       position: absolute;
       width: 100%;
@@ -124,7 +124,7 @@ a {
       z-index: 10;
       background: inherit;
     }
-    &:before{
+    &:before {
       width: 80%;
       top: -8px;
     }
@@ -358,6 +358,7 @@ a {
 .testimonials {
   &__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   &__item {
@@ -442,6 +443,7 @@ a {
   }
   &__cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 70px;
   }
