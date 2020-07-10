@@ -87,7 +87,6 @@ a {
     grid-template-columns: 1fr 3fr;
     align-items: flex-end;
   }
-
 }
 .nav {
   &__list li {
@@ -102,6 +101,40 @@ a {
     }
   }
 }
+
+.burger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+
+  &__item {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: $black;
+    color: transparent;
+    font-size: 0;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      z-index: 10;
+      background: inherit;
+    }
+    &:before{
+      width: 80%;
+      top: -8px;
+    }
+    &:after {
+      width: 120%;
+      top: 8px;
+    }
+  }
+}
+
 .header.fixed {
   position: fixed;
   background: $pink;
@@ -535,9 +568,9 @@ option {
   &__text {
     text-transform: uppercase;
     color: $link-color;
-    & a{
+    & a {
       color: $pink;
-      &:hover{
+      &:hover {
         color: #fff;
         background: $pink;
       }
@@ -546,14 +579,14 @@ option {
 }
 
 .footer__icons {
-  margin: 0 0 20px ;
+  margin: 0 0 20px;
 }
 
 .footer__icon {
   height: 15px;
   width: 15px;
-  transition: all .2s ease-in-out;
-  &:hover{
+  transition: all 0.2s ease-in-out;
+  &:hover {
     fill: $pink;
   }
 }

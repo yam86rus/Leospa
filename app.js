@@ -25,12 +25,22 @@ $(function () {
 
         let elementId = $(this).data('scroll');
         let elementOffset = $(elementId).offset().top;
-        console.log(elementOffset);
+
+        nav.removeClass("show");
 
         $('html, body').animate({
             scrollTop: elementOffset - 90
         }, 700);
     });
     // === / Smooth scroll ===
+
+    // === Nav Togle ===
+    let nav = $('#nav');
+    let navToggle = $("#navToggle");
+
+        navToggle.on("click", function(event){
+        event.preventDefault();
+        nav.toggleClass("show");
+    });
 
 });
