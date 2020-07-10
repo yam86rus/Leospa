@@ -275,7 +275,7 @@ a {
 .testimonials__row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .testimonials__item {
   text-align: center;
